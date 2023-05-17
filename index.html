@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Swifty Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width =device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+ <body>
+    <section id="banner">
+     <img src="logo.png" class="logo">  
+     <div class="banner-text">
+        <h1>Swifty Shop</h1>
+        <p>Looking sharp, feeling fresh - at the barbershop!</p>
+    <div class="banner-btn">
+        <a href="#"><span></span>Find Out</a>
+        <a href="#"><span></span>Read more</a>
+    </div>  
+     </div> 
+    </section>
+ <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#footer">Meet Us</a></li>
+        </ul>
+    </nav>
+ </div>   
+ <div id="menuBtn">
+    <img src="menu.png" id="menu">
+ </div>
+
+  <!--Features-->
+
+ <section id="feature">
+ <div class="title-text">
+    <p>FEATURES</p>
+    <h1>BAKIT KAMI YUNG PILIIN NIYO?</h1>
+ </div>
+ <div class="feature-box">
+    <div class="features">
+        <h1>Professional Barber</h1>
+    <div class="features-desc">
+        <div class="features-icon">
+            <i class="fa fa-scissors"></i>
+        </div>
+        <div class="features-text">
+           <p>Aba! Baka professional to</p> 
+        </div>
+    </div>
+    <h1>Open for 12hrs</h1>
+    <div class="features-desc">
+        <div class="features-icon">
+            <i class="fa fa-check-square-o"></i>
+        </div>
+        <div class="features-text">
+           <p>Kahit mag overtime basta magupitan kalang</p> 
+        </div>
+    </div>
+    <h1>Pasok sa Budget</h1>
+    <div class="features-desc">
+        <div class="features-icon">
+            <i class="fa fa-thumbs-up"></i>
+        </div>
+        <div class="features-text">
+           <p>Kayang kaya sa bulsa, hindi kapa masusura</p> 
+        </div>
+    </div>       
+    </div>
+    <div class="features-img">
+        <img src="barberman.jpg">
+    </div>
+ </div>
+ </section>
+  
+ <!--Service -->
+
+  <section id="service">
+    <div class="title-text">
+        <p>SERVICES</p>
+        <h1>We Provide Better</h1>
+     </div>
+     <div class="service-box">
+        <div class="single-service">
+            <img src="pic1.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Style 1</h3>
+                <hr>
+                <p>One of the famous haircut</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="pic2.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Style 2<h3>
+                <hr>
+                <p>Second famous haircut</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="pic3.png">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Hair Wash</h3>
+                <hr>
+                <p>We'd like to wash your hair</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="pic4.jpg">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Face cleansing</h3>
+                <hr>
+                <p>Here we want to make sure that you are satisfy</p>
+            </div>
+        </div>
+     </div>
+  </section>
+ 
+<!--footer-->
+<section id="footer">
+    <img src="footer.png" class="footer-img">
+    <div class="title-text">
+        <p>Meet Us</p>
+        <h1>Visit shop Today</h1>
+     </div>
+<div class="footer-row">
+<div class="footer-left">
+    <h1>Opening hours</h1>
+    <p><i class="fa fa-clock-o"></i>Monday-Friday - 7am-6pm</p>
+    <p><i class="fa fa-clock-o"></i>Saturday - 9am-5pm</p>
+</div>
+<div class="footer-right">
+    <h1>Get in Touch</h1>
+    <p>@ Loob-Bunga Nacolcol, Botolan, Zambales<i class="fa fa-map-marker"></i></p>
+    <p>floresjohnkevin93@gmail.com<i class="fa fa-paper-plane-o"></i></p>
+    <p>+63966 513 8960<i class="fa fa-phone"></i></p>
+</div>
+</div>     
+
+<div class="social-links">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-google"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube-play"></i>
+</div>
+
+
+</section>
+
+
+ <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+  menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "menu.png";
+    }
+  }
+  
+  var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+ </script>
+    
+ </body>   
+</html>
